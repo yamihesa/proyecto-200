@@ -340,24 +340,24 @@ body {
 }
 
 .circles:after {
-  content:'';
-  display:inline-block;
-  width:100%;
-  height:100px;
-  background:rgb(204, 155, 204);
-  position:absolute;
-  top:-50px;
-  left:0;
-  transform:skewY(-4deg);
-  -webkit-transform:skewY(-4deg);
+	content:normal;
+  	display:inline-block;
+ 	width:100%;
+  	height:100px;
+  	background:rgb(204, 155, 204);
+  	position:absolute;
+  	top:-50px;
+  	left:0;
+  	transform:skewY(-4deg);
+  	-webkit-transform:skewY(-4deg);
 }
 
 .circles { 
 	background:rgb(107, 154, 180);
 	text-align: center;
 	position: relative;
-  margin-top:-60px;
-  box-shadow:inset -1px -4px 4px rgba(184, 31, 31, 0.2);
+  	margin-top:-60px;
+  	box-shadow:inset -1px -4px 4px rgba(184, 31, 31, 0.2);
 }
 
 .circles p {
@@ -365,8 +365,8 @@ body {
 	color: rgb(144, 118, 148);
 	padding-top: 60px;
 	position: relative;
-  z-index: 9;
-  line-height: 100%;
+  	z-index: 9;
+  	line-height: 100%;
 }
 
 .circles p small { 
