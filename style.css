@@ -2,10 +2,17 @@
     margin: 0;
     padding: 0;
 }
-.headeFondo{
-	background-image: url(./imagenes/v1014-pattern-001b.jpg);
-}
+
 /*--Keyframes--*/
+
+@keyframes example {
+	0% {color: wheat;}
+	25% {color: rgb(148, 158, 131);}
+	50% {color: rgb(219, 146, 221);}
+	75% {color: rgb(116, 177, 185);}
+	100% {color: rgb(212, 162, 105);}
+}
+
 @keyframes aparecer {
 	from {
 	 opacity: 0;
@@ -20,7 +27,7 @@
 	  width: 0;
 	}
 	to {
-	  width: 100%;
+	  width: 75%;
 	}
 }
 @keyframes blink {
@@ -139,20 +146,14 @@
 	transition: transform 2s;
 }
 .alter{
-animation-name: example;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-}
-
-@keyframes example {
-0% {color: wheat;}
-25% {color: rgb(148, 158, 131);}
-50% {color: rgb(219, 146, 221);}
-75% {color: rgb(116, 177, 185);}
-100% {color: rgb(212, 162, 105);}
-}
-
-	
+	font-family: merienda;
+	background-color: aliceblue;
+	border: #8f6f8f;
+	border-radius: 1rem;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}	
 /*-----------------------------------------------------------------------------*/
 
 /*--Home--*/
@@ -221,7 +222,8 @@ h4{
   	margin: 0 auto;
   	font-family: "Courier New";
   	border-right: 0.15em solid #18bdec;
-  	animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  	animation: typing 8s steps(38) 1s 1 normal both, blink 1s steps(1);
+	animation-iteration-count:infinite;
 }
 
 .footerTextoRedes{
@@ -235,7 +237,7 @@ h4{
 }
 
 .recuadro{
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	color: white;
 	opacity: 80%;
 	border-bottom:solid rgb(91, 8, 86);
@@ -255,6 +257,7 @@ h4{
 /*Terapias*/
 
 .tituloTerapias{
+	font-family: merienda;
 	animation-duration: 3s;
 	animation-name: aparecer;
 	animation-iteration-count:infinite;
@@ -289,6 +292,7 @@ h4{
 }
 
 .tituloTalleres{
+	font-family: merienda;
 	animation-duration: 5s;
 	animation-name: aparecer;
 	animation-iteration-count:initial;
@@ -298,6 +302,7 @@ h4{
 /*Tienda*/
 
 .tituloTienda{
+	font-family: merienda;
 	animation-duration: 5s;
 	animation-name: aparecer;
 	animation-iteration-count:initial;
@@ -312,6 +317,10 @@ h4{
 /*-----------------------------------------------------------------------------*/
 
 /*Formulario*/
+
+.tituloContacto{
+	font-family: merienda;
+}
 
 .form-control{
 	border: solid rgba(72, 6, 69, 0.631);
